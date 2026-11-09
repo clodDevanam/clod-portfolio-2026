@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Claudio Angga Arthona · QA Professional / Software Tester</title>
+  <meta name="description" content="QA professional with 7+ years of experience in manual software and game testing across mobile, web, and API environments.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%231c1d1f'/><text x='16' y='23' font-size='20' text-anchor='middle' fill='%23b4bd9a' font-family='Georgia'>C</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ===== NAVIGATION: each link's href must match a view id below (and VIEWS in js/main.js) ===== -->
+<header class="bar">
+  <a class="brand" href="#home">C. A. Arthona</a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" aria-label="Main">
+    <a href="#home">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills &amp; Tools</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ===== HOME ===== -->
+  <section class="view" id="home">
+    <div class="home">
+      <div class="home-main">
+        <p class="role">QA Professional / Software Tester</p>
+        <h1>Claudio<br>Angga Arthona</h1>
+        <p class="lead">I find the issues that sit just outside the expected flow. Seven-plus years of manual software and game testing across mobile, web, and API, from game studios to remote fintech startups.</p>
+        <p class="actions">
+          <!-- Opens the PDF in a new tab, so the label is "View CV" -->
+          <a class="btn solid" href="assets/documents/Claudio_Angga_Arthona_CV.pdf" target="_blank" rel="noopener">View CV</a>
+          <a class="btn" href="#projects">Browse projects</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </p>
+      </div>
+      <aside class="home-side" aria-label="Highlights">
+        <div class="fact now">
+          <span class="k">Currently</span>
+          <strong>QA Lead at Bloxley</strong>
+          <span>Mobile banking app on Android and iOS. Since January 2025.</span>
+        </div>
+        <div class="fact"><span class="k">Experience</span><strong>7+ years</strong><span>Across four companies, 2019 to today.</span></div>
+        <div class="fact"><span class="k">Approach</span><strong>Functional, regression, exploratory, API</strong><span>Test cases built from PRDs and Figma designs.</span></div>
+        <div class="fact"><span class="k">Environments</span><strong>Android · iOS · Web · Desktop</strong><span>Remote-first startups and in-office teams.</span></div>
+      </aside>
+    </div>
+
+    <!-- Selected Work: cards generated from PROJECTS with featured:true in js/data.js -->
+    <div class="selected">
+      <div class="selected-head">
+        <h2>Selected work</h2>
+        <a href="#projects">All projects →</a>
+      </div>
+      <div class="cards-2" id="selected"></div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS (cards are generated from js/data.js) ===== -->
+  <section class="view" id="projects">
+    <header class="view-head"><h2>Projects</h2><p>Select a project to see my role, contribution, test coverage and tools.</p></header>
+    <div class="cards" id="cards"></div>
+  </section>
+
+  <!-- ===== EXPERIENCE (tabs generated from js/data.js) ===== -->
+  <section class="view" id="experience">
+    <header class="view-head"><h2>Experience</h2><p>Four companies, newest first.</p></header>
+    <div class="exp">
+      <div class="tabs" id="exp-tabs" role="tablist" aria-label="Companies"></div>
+      <article class="panel" id="exp-panel" role="tabpanel" tabindex="0"></article>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS & TOOLS (rows generated from js/data.js) ===== -->
+  <section class="view" id="skills">
+    <header class="view-head"><h2>Skills &amp; Tools</h2><p>What I test, and what I test it with.</p></header>
+    <div class="skills-wrap">
+      <dl class="skills" id="skills-list"></dl>
+      <div class="edu"><span class="k">Education</span><strong>Bachelor of Information Systems</strong><span>STMIK AMIKOM Yogyakarta, 2012 to 2016</span></div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT (phone number intentionally not published; it stays in the CV PDF only) ===== -->
+  <section class="view" id="contact">
+    <header class="view-head"><h2>Contact</h2><p>Open to QA roles. Email is the quickest way to reach me.</p></header>
+    <ul class="contact">
+      <li><span class="k">Email</span><a href="mailto:anggadevanam@gmail.com">anggadevanam@gmail.com</a></li>
+      <li><span class="k">LinkedIn</span><a href="https://www.linkedin.com/in/claudioangga/" target="_blank" rel="noopener">linkedin.com/in/claudioangga</a></li>
+      <li><span class="k">Notion portfolio</span><a href="https://knowing-study-cab.notion.site/claudio-angga" target="_blank" rel="noopener">Screenshots and project write-ups</a></li>
+      <li><span class="k">CV</span><a href="assets/documents/Claudio_Angga_Arthona_CV.pdf" target="_blank" rel="noopener">View CV (PDF)</a></li>
+    </ul>
+  </section>
+</main>
+
+<!-- ===== PROJECT DETAIL PANEL (filled by js/main.js) ===== -->
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="d-title" hidden>
+  <button class="close" id="close" aria-label="Close project details">Close</button>
+  <div id="d-body"></div>
+</aside>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
